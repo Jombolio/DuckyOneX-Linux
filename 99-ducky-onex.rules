@@ -1,0 +1,3 @@
+# Ducky One X Keyboard
+# Grants read/write access to the raw HID device for the 'plugdev' group or anyone logged in locally.
+KERNEL=="hidraw*", SUBSYSTEM=="hidraw", ATTRS{idVendor}=="3233", TAG+="uaccess"
